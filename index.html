@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纸张翻页效果</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="papers-wrapper">
+            <div class="paper" style="--index: 0;">
+                <div class="paper-content">
+                    <h2>Esponjosos, fritos, delicados.</h2>
+                    <p>Recetas de siempre con un giro de autor.</p>
+                    <p class="time">TODOS LOS DÍAS DE 9 A 18H</p>
+                    <div class="logo">🥐</div>
+                </div>
+            </div>
+            <div class="paper" style="--index: 1;">
+                <div class="paper-content">
+                    <h2>甜甜圈</h2>
+                    <p>美味的甜甜圈食谱</p>
+                    <p class="time">每天供应</p>
+                    <div class="logo">🍩</div>
+                </div>
+            </div>
+            <div class="paper" style="--index: 2;">
+                <div class="paper-content">
+                    <h2>面包</h2>
+                    <p>新鲜烤制的面包</p>
+                    <p class="time">上午新鲜出炉</p>
+                    <div class="logo">🍞</div>
+                </div>
+            </div>
+            <div class="paper" style="--index: 3;">
+                <div class="paper-content">
+                    <h2>蛋糕</h2>
+                    <p>精选食材制作</p>
+                    <p class="time">预订可得</p>
+                    <div class="logo">🎂</div>
+                </div>
+            </div>
+            <div class="paper" style="--index: 4;">
+                <div class="paper-content">
+                    <h2>饼干</h2>
+                    <p>手工烤制饼干</p>
+                    <p class="time">随时供应</p>
+                    <div class="logo">🍪</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="prevBtn" class="btn btn-prev">← 上一张</button>
+            <span class="page-info"><span id="currentPage">1</span> / <span id="totalPages">5</span></span>
+            <button id="nextBtn" class="btn btn-next">下一张 →</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
